@@ -19,3 +19,23 @@
 
 Math.random() - 난수 생성 함수
 */ 
+
+let input;
+let userWinCount = 0;
+let comWinCount = 0;
+let userChoice;
+let comsChoice;
+
+while (userWinCount < 2 && comWinCount < 2) {
+    comsChoice = Math.floor(Math.random() * 3);
+    input = prompt("가위~ 바위~ 보!");
+    if (input = "가위") {
+        userChoice = 0;
+    } else if (input = "바위") {
+        userChoice = 1;
+    } else if (input = "보") {
+        userChoice = 2;
+    }
+
+    
+}

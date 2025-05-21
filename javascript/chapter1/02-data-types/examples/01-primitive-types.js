@@ -8,7 +8,7 @@ let nothing = null;         // null
 let unknown;                // undefined
 let symbol = Symbol("id");  // 심볼
 
-console.log(typeof name);       // string
+console.log(typeof name);       // stringN
 console.log(typeof age);        // number
 console.log(typeof isStudent);  // boolean
 console.log(typeof nothing);    // object (자바스크립트의 오래된 버그)

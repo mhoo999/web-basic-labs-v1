@@ -2,6 +2,7 @@
 console.log("=== 타입 변환 ===");
 
 // 숫자로 변환
+console.log(Number(123));       // 123
 console.log(Number("123"));     // 123
 console.log(Number("abc"));     // NaN
 
@@ -9,6 +10,7 @@ console.log(Number("abc"));     // NaN
 console.log(String(456));       // "456"
 
 // 불리언으로 변환
+console.log(Boolean(1));        // true
 console.log(Boolean(0));        // false
 console.log(Boolean("hello"));  // true
 console.log(Boolean(""));       // false
