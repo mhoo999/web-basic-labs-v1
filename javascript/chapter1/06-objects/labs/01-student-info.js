@@ -3,7 +3,16 @@
 
 const student = {
   // 여기에 name, age, major 추가
+  name : "윤학생",
+  age : 21,
+  major : "컴퓨터공학"
 };
+
+console.log(student.name);
+console.log(student["age"]);
+
+student.grade = 'A';
+console.log(student.grade);
 
 // 예시 출력:
 // 이름: 윤학생

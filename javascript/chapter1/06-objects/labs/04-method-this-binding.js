@@ -9,3 +9,9 @@ const greetFunc = student.greet;
 
 // TODO: greetFunc() 를 this가 유지되도록 고쳐보세요
 // 출력: 안녕하세요, 윤학생입니다.
+
+
+greetFunc();
+
+const bindGreet = greetFunc.bind(student);
+bindGreet();
