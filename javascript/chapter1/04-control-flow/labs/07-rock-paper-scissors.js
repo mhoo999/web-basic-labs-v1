@@ -35,7 +35,7 @@ while (userWinCount < 2 && comWinCount < 2) {
         userChoice = 1;
     } else if (input = "보") {
         userChoice = 2;
-    }
+    }   
 
     
 }
