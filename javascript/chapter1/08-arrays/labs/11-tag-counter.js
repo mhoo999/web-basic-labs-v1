@@ -9,3 +9,13 @@ const posts = [
 ];
 
 // TODO: 모든 태그를 하나의 배열로 합친 후, reduce로 개수 세기
+const allTags = posts.flatMap((post) => post.tags);
+
+// console.log(allTags);
+
+const tagCount = allTags.reduce((acc, tag) => {
+  acc[tag] = (acc[tag] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(tagCount);

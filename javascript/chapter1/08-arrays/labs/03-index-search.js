@@ -6,3 +6,4 @@ const menu = ["홈", "공지사항", "게시판", "마이페이지"];
 const clicked = "게시판";
 
 // TODO: indexOf를 사용해서 위치 출력
+console.log(menu.indexOf(clicked));
