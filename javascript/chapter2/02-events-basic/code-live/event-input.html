@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="username" type="text" placeholder="입력 대기중..." />
+    <p id="preview">미리보기 : </p>
+</body>
+<script>
+    let input = document.querySelector('#username');
+    let preview = document.querySelector('#preview');
+    input.addEventListener("input", () => {
+        preview.textContent = input.value;
+    });
+</script>
+</html>

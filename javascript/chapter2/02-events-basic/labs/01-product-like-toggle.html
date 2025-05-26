@@ -9,6 +9,10 @@
       // TODO: 상품 찜하기 버튼을 누르면 "찜함 ❤️" / "찜취소 🤍"로 텍스트가 바뀌도록 하세요.
       // 버튼 클릭 시 텍스트 토글
       // 🤍 찜하기 → ❤️ 찜함 → 🤍 찜하기 → ...
+      let btn = document.querySelector("#likeBtn");
+      btn.addEventListener("click", () => {
+        btn.textContent == "🤍 찜하기" ? btn.textContent = "❤️ 찜함" : btn.textContent = "🤍 찜하기";
+      });
     </script>
   </body>
 </html>

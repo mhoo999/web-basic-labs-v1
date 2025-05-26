@@ -10,6 +10,11 @@
       // TODO: 12000원 상품에 대한 수량 입력 시 총 가격을 구해 실시간으로 화면에 표시하세요.
       // - input 이벤트 발생 시
       // - 수량 * 12000 계산 후 totalPrice에 표시
+      let qty = document.querySelector("#qtyInput");
+      let total = document.querySelector("#totalPrice");
+      qty.addEventListener("change", () => {
+        total.textContent = 12000 * qty.value;
+      })
     </script>
   </body>
 </html>
