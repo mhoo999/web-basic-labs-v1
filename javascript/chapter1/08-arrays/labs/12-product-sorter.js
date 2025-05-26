@@ -9,5 +9,5 @@ const products = [
 ];
 
 // TODO: sort 사용 (price 기준 오름차순)
-let newProducts = products.sort((a, b) => b.price - a.price);
+let newProducts = products.sort((a, b) => a.price - b.price);
 console.log(newProducts);

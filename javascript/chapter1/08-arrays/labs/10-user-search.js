@@ -9,4 +9,4 @@ const users = [
 ];
 
 // TODO: find 사용
-console.log(users.find((x) => x.email.includes("@naver.com")));
+console.log(users.find((x) => x.email.includes("naver.com")));
