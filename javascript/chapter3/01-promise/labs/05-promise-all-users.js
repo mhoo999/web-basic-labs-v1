@@ -12,3 +12,4 @@ https://jsonplaceholder.typicode.com/users/3
 - 3명의 이름(name)만 배열로 출력할 것 (예: ["Leanne", "Ervin", "Clementine"])
 - 에러가 발생하면 "요청 실패" 메시지를 출력하세요.
 */
+
