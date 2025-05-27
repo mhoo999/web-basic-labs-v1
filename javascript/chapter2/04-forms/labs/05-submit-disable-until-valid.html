@@ -8,6 +8,23 @@
     </form>
     <script>
       // TODO: 둘 다 값이 있으면 버튼 활성화, 아니면 비활성화
+      const email2 = document.getElementById("email2");
+      const pw2 = document.getElementById("pw2");
+      const okBtn = document.getElementById("okBtn");
+
+      okBtn.disabled = true;
+
+      email2.addEventListener("input", update);
+      pw2.addEventListener("input", update);
+
+      function update() {
+        const email = emai2.value.trim();
+        const pw = pw2.value.trim();
+
+        if (email && pw) {
+          okBtn.disabled = false;
+        }
+      };
     </script>
   </body>
 </html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+     <div id="outer">
+         <button class="categoryBtn">👕 의류</button>
+         <button class="categoryBtn">👟 신발</button>
+         <button class="categoryBtn">🎒 가방</button>
+     </div>
+    <script>
+        const outer = document.getElementById("outer");
+        outer.addEventListener("click", (e) => {
+            alert(e.target.textContent);
+        })
+    </script>
+  </body>
+</html>

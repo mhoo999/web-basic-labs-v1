@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer">
+        <button id="inner">버튼</button>
+    </div>
+    <script>
+        const outer = document.getElementById("outer");
+        const inner = document.getElementById("inner");
+
+        outer.addEventListener("click", () => {
+            console.log("outer clicked");
+        });
+        inner.addEventListener("click", (e) => {
+            e.stopPropagation();
+            console.log("inner clicked");
+        });
+    </script>
+</body>
+</html>

@@ -4,15 +4,32 @@
     <img id="mainImage" src="https://via.placeholder.com/200x200?text=Main" />
 
     <div id="thumbs">
-      <img src="https://via.placeholder.com/100x100?text=1" />
-      <img src="https://via.placeholder.com/100x100?text=2" />
-      <img src="https://via.placeholder.com/100x100?text=3" />
+      <img
+        src="https://img.freepik.com/free-photo/isolated-shot-ginger-kitten-sitting-front-white-looking-right_181624-45937.jpg?semt=ais_hybrid&w=740"
+      />
+      <img
+        src="https://i.pinimg.com/originals/6f/7f/0b/6f7f0bbccc81c01b7f242b877c6fda6a.jpg"
+      />
+      <img
+        src="https://cdn.imweb.me/upload/S20221129c3c04fdc67a8b/09e904cb8f26f.png"
+      />
     </div>
 
     <script>
       // TODO:
       // thumbs에 이벤트 위임
       // 클릭된 썸네일 이미지의 src를 mainImage의 src로 변경
+      const main = document.getElementById("mainImage");
+      document.getElementById("thumbs").addEventListener("click", (e) => {
+        // console.log(e.target.src);
+        main.src = e.target.src;
+      })
     </script>
+    <style>
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    </style>
   </body>
 </html>
