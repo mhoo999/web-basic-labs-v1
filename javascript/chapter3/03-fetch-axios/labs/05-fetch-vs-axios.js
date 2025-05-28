@@ -7,3 +7,26 @@
 - 각각 결과 콘솔 출력
 - 차이점 주석으로 정리
 */
+
+import axios from "axios";
+
+async function get() {
+    console.time("fetch");
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+    const data = await res.json();
+    console.log(data);
+    console.timeEnd("fetch");
+}
+
+// get();
+
+async function axiosGet() {
+    console.time("axios");
+    const res = await axios.get("https://jsonplaceholder.typicode.com/todos/1");
+    console.log(res.data);
+    console.timeEnd("axios");
+}
+
+axiosGet();
+
+// axios가 더 직관적임

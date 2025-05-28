@@ -6,3 +6,20 @@ POST: https://jsonplaceholder.typicode.com/comments
 - 전송할 데이터: { postId: 1, name: "Tester", body: "Good post!", email: "test@example.com" }
 - 응답 데이터 콘솔 출력
 */
+
+async function post() {
+    const res = await fetch("https://jsonplaceholder.typicode.com/comments",
+        {
+            method: "POST",
+            body: JSON.stringify({
+                userId: 1,
+                name: "Tester",
+                body: "Good post!",
+                email: "test@example.com"
+            })
+        });
+    const data = await res.json();
+    console.log(data);
+}
+
+post();

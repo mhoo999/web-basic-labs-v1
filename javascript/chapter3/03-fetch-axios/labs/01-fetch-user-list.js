@@ -6,3 +6,11 @@ GET: https://jsonplaceholder.typicode.com/users
 - JSON 형식으로 응답을 받아 콘솔에 이름(name)만 출력
 - async/await 사용 필수
 */
+
+async function get() {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await res.json();
+    console.log(data);
+}
+
+get();

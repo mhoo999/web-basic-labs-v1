@@ -10,3 +10,25 @@ function asyncJob(ms) {
 
 각 방식에서 콘솔로 각 작업의 시작/끝, 전체 소요시간을 출력해보세요.
 */
+
+function asyncJob(ms) {
+  return new Promise(resolve => setTimeout(() => resolve(ms), ms));
+}
+
+// async function seq() {
+//   console.time("순차");
+//   asyncJob(1000);
+//   asyncJob(1000);
+//   asyncJob(1000);
+//   console.timeEnd("순차");
+// }
+
+// seq();
+
+async function parallel() {
+  console.time("병렬");
+  Promise.all([asyncJob(1000), asyncJob(1000), asyncJob(1000)]);
+  console.timeEnd("병렬");
+}
+
+parallel();

@@ -7,3 +7,12 @@
 Promise.all을 활용하여
 두 결과를 동시에 받아 콘솔에 출력하세요.
 */
+
+const dataArray = [
+    "https://jsonplaceholder.typicode.com/users/1",
+    "https://jsonplaceholder.typicode.com/posts/1"
+]
+
+async function getData() {
+    
+}
